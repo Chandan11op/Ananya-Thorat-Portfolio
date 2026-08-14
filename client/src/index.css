@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy-900: #4E0C20;
+  --color-burgundy-800: #611029;
+  --color-burgundy-700: #7A1736;
+  --color-burgundy-600: #8F2145;
+  --color-burgundy-500: #A82E56;
+  --color-burgundy-400: #C0436F;
+
+  --color-brandPink-50: #FDF2F5;
+  --color-brandPink-100: #F8DDE5;
+  --color-brandPink-200: #F3C5D2;
+  --color-brandPink-300: #E8A0B8;
+  --color-brandPink-400: #D67B9A;
+  --color-brandPink-500: #C4597F;
+
+  --color-offwhite: #FFF9F5;
+  --color-offwhite-warm: #FFFDFB;
+  --color-offwhite-paper: #F7F2EE;
+  --color-offwhite-cream: #FAF5EF;
+  --color-offwhite-card: #FFFFFF;
+
+  --color-ink-900: #1A1215;
+  --color-ink-800: #241A1D;
+  --color-ink-700: #3D2D32;
+  --color-ink-600: #59444B;
+  --color-ink-muted: #7A6C71;
+  --color-ink-light: #A3969B;
+
+  --color-gold-400: #F5C542;
+  --color-gold-500: #E5B22D;
+
+  --font-serif: "Playfair Display", "Italiana", Georgia, serif;
+  --font-display: "Italiana", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-handwritten: "Caveat", "Reenie Beanie", cursive;
+  --font-script: "Reenie Beanie", "Caveat", cursive;
+
+  --shadow-paper: 0 4px 20px -2px rgba(36, 26, 29, 0.08), 0 2px 6px -1px rgba(36, 26, 29, 0.04);
+  --shadow-paper-lg: 0 12px 32px -4px rgba(36, 26, 29, 0.12), 0 4px 12px -2px rgba(36, 26, 29, 0.06);
+  --shadow-paper-lift: 0 20px 40px -8px rgba(122, 23, 54, 0.18), 0 8px 16px -4px rgba(36, 26, 29, 0.08);
+  --shadow-burgundy-glow: 0 8px 24px -4px rgba(122, 23, 54, 0.35);
+  --shadow-pink-glow: 0 8px 24px -4px rgba(232, 160, 184, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-offwhite);
+  color: var(--color-ink-800);
+  font-family: var(--font-sans);
+}
+
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Custom Scrollbar in Burgundy/Pink Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF9F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7A1736;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8F2145;
+}
+
+/* Reduced motion accessibility support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

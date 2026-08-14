@@ -173,7 +173,7 @@ export const Contact = () => {
                 </span>
                 <span className="text-xs text-ink-muted">English • Hindi • Marathi</span>
               </div>
-              <StampBadge text="300+ AUDIENCE" variant="burgundy" rotate="3deg" />
+              <StampBadge text="LIVE AUDIENCE" variant="burgundy" rotate="3deg" />
             </div>
 
           </div>

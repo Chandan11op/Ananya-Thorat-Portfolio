@@ -94,29 +94,33 @@ export const EventModal = ({ event, isOpen, onClose }) => {
               </p>
             </div>
 
-            {/* Quick Meta Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 p-3.5 bg-brandPink-50/60 rounded-xl border border-brandPink-200/50 text-xs text-ink-700">
-              <div className="flex items-center gap-2">
+            {/* Quick Meta Details */}
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 p-4 bg-brandPink-50/60 rounded-xl border border-brandPink-200/50 text-xs text-ink-700">
+              <div className="flex items-center gap-2 min-w-[120px]">
                 <Mic className="w-4 h-4 text-burgundy-700 shrink-0" />
                 <div>
                   <span className="block text-[10px] uppercase font-bold text-ink-muted">Role</span>
                   <span className="font-semibold text-ink-900">{event.role}</span>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-burgundy-700 shrink-0" />
-                <div>
-                  <span className="block text-[10px] uppercase font-bold text-ink-muted">Audience</span>
-                  <span className="font-semibold text-ink-900">{event.attendees}</span>
+              {event.attendees && (
+                <div className="flex items-center gap-2 min-w-[120px]">
+                  <Users className="w-4 h-4 text-burgundy-700 shrink-0" />
+                  <div>
+                    <span className="block text-[10px] uppercase font-bold text-ink-muted">Audience</span>
+                    <span className="font-semibold text-ink-900">{event.attendees}</span>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
-                <MapPin className="w-4 h-4 text-burgundy-700 shrink-0" />
-                <div>
-                  <span className="block text-[10px] uppercase font-bold text-ink-muted">Location</span>
-                  <span className="font-semibold text-ink-900">{event.venue}</span>
+              )}
+              {event.venue && (
+                <div className="flex items-center gap-2 min-w-[120px]">
+                  <MapPin className="w-4 h-4 text-burgundy-700 shrink-0" />
+                  <div>
+                    <span className="block text-[10px] uppercase font-bold text-ink-muted">Location</span>
+                    <span className="font-semibold text-ink-900">{event.venue}</span>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
 
             {/* Responsibilities & Highlights */}

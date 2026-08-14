@@ -68,21 +68,21 @@ export const CustomCursor = () => {
         // Draw the outer glow
         ctx.lineWidth = 8;
         ctx.strokeStyle = 'rgba(243, 197, 210, 0.4)'; // brandPink-200 with transparency
-        ctx.shadowBlur = 20;
+        ctx.shadowBlur = 4;
         ctx.shadowColor = '#E8A0B8'; // brandPink-300
         ctx.stroke();
 
         // Draw the solid inner line
         ctx.lineWidth = 3;
         ctx.strokeStyle = '#D67B9A'; // brandPink-400
-        ctx.shadowBlur = 10;
+        ctx.shadowBlur = 2;
         ctx.shadowColor = '#fff';
         ctx.stroke();
 
         // Draw the bright core
         ctx.lineWidth = 1;
         ctx.strokeStyle = '#ffffff';
-        ctx.shadowBlur = 5;
+        ctx.shadowBlur = 0;
         ctx.stroke();
       }
 

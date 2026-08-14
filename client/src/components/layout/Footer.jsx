@@ -85,10 +85,15 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Credits & Copyright */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ink-light font-sans">
-          <p>
-            © {new Date().getFullYear()} Ananya Thorat. All Rights Reserved.
-          </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ink-light font-sans text-center sm:text-left">
+          <div className="space-y-1">
+            <p>
+              © {new Date().getFullYear()} Ananya Thorat. All Rights Reserved.
+            </p>
+            <p>
+              Designed and developed by <a href="https://chandan-tiwadi.pages.dev" target="_blank" rel="noopener noreferrer" className="text-brandPink-300 hover:text-white underline decoration-brandPink-300/30 underline-offset-2 transition-colors">Chandan Tiwadi</a>
+            </p>
+          </div>
           <div className="flex items-center gap-1 text-[11px]">
             <span>Designed for live stage energy & editorial elegance</span>
             <Sparkles className="w-3 h-3 text-gold-400" />

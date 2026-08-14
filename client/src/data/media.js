@@ -6,7 +6,7 @@
 
 export const mediaAssets = {
   hero: {
-    portrait: "/assets/images/hero/hero_portrait.jpg",
+    portrait: "/assets/images/hero/hero_portrait.png",
     alt: "Ananya Thorat - Professional Event Anchor with Microphone on Stage",
     caption: "Live on stage with microphone • Mumbai"
   },
@@ -20,32 +20,32 @@ export const mediaAssets = {
     unicorn26: {
       image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80",
       fallback: "/assets/images/events/unicorn26.jpg",
-      alt: "Unicorn 26 Entrepreneurship Fest Keynote Stage"
+      alt: "Representative Event Visual: Entrepreneurship Fest"
     },
     fashionshow: {
       image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1200&q=80",
       fallback: "/assets/images/events/fashionshow.jpg",
-      alt: "Fashion Show Runway & Cultural Event Stage"
+      alt: "Representative Event Visual: Fashion Show Runway"
     },
     cultural: {
       image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
       fallback: "/assets/images/events/cultural.jpg",
-      alt: "Cultural Festival & Talent Competition Arena"
+      alt: "Representative Event Visual: Cultural Festival"
     },
     ceremony: {
       image: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
       fallback: "/assets/images/events/ceremony.jpg",
-      alt: "Formal College Ceremonies & Dignitary Convocation"
+      alt: "Representative Event Visual: Formal Ceremonies"
     },
     pitch: {
       image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80",
       fallback: "/assets/images/events/pitch.jpg",
-      alt: "Business Pitch & Startup Competition Arena"
+      alt: "Representative Event Visual: Business Pitch"
     },
     speaker: {
       image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80",
       fallback: "/assets/images/events/speaker.jpg",
-      alt: "Guest Speaker Sessions & Panel Moderation Stage"
+      alt: "Representative Event Visual: Guest Speaker Sessions"
     }
   },
   textures: {

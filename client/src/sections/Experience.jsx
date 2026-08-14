@@ -153,9 +153,11 @@ export const Experience = () => {
                       <span className="font-bold uppercase tracking-wider bg-burgundy-700/90 px-3 py-1 rounded-full text-[10px]">
                         FLAGSHIP EDITION
                       </span>
-                      <span className="font-handwritten text-base text-brandPink-200">
-                        {featuredEvent.attendees}
-                      </span>
+                      {featuredEvent.attendees && (
+                        <span className="font-handwritten text-base text-brandPink-200">
+                          {featuredEvent.attendees}
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -241,9 +243,11 @@ export const Experience = () => {
                           <span className="font-bold uppercase tracking-wider bg-black/50 backdrop-blur-xs px-2.5 py-0.5 rounded">
                             {event.theme === 'formal' ? 'Formal' : 'Cultural'}
                           </span>
-                          <span className="font-handwritten text-brandPink-200 text-sm">
-                            {event.attendees}
-                          </span>
+                          {event.attendees && (
+                            <span className="font-handwritten text-brandPink-200 text-sm">
+                              {event.attendees}
+                            </span>
+                          )}
                         </div>
                       </div>
 

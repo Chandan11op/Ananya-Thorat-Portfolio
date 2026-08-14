@@ -5,141 +5,119 @@ export const experienceData = {
     institution: "K.P.B. Hinduja College of Commerce",
     duration: "Academic Tenure",
     responsibilities: [
-      "Led the Anchoring Department for high-profile college events and flagship festivals.",
-      "Managed, trained, and mentored a team of student anchors and stage volunteers.",
-      "Hosted flagship entrepreneurship, cultural, and competitive collegiate events.",
-      "Coordinated directly with organizing committees, core councils, and celebrity guests.",
-      "Authored custom event scripts, speaker introductions, witty stage transitions, and interactive crowd engagement games."
+      "Led the Anchoring Department for college events and festivals.",
+      "Managed a team of student anchors and volunteers.",
+      "Hosted entrepreneurship, cultural, and competitive events.",
+      "Coordinated with organizing committees to ensure smooth event execution.",
+      "Prepared scripts, introductions, transitions, and audience engagement segments."
     ],
-    highlightQuote: "Led the stage voice for Hinduja E-Cell's biggest multi-day summits."
+    highlightQuote: "Led the Anchoring Department and coordinated the anchoring team."
   },
 
   signatureEvents: [
     {
       id: "unicorn-26",
       title: "Unicorn 26 – Entrepreneurship Fest",
-      category: "Corporate & Entrepreneurship",
+      category: "Entrepreneurship",
       theme: "formal",
-      badge: "FEATURED FLAGSHIP",
-      subtitle: "Flagship Inter-College Entrepreneurship Summit",
-      date: "Signature Fest Edition",
-      venue: "Main Auditorium, Mumbai",
-      attendees: "300+ Attendees & Founders",
-      role: "Lead Event Anchor & Master of Ceremonies",
+      badge: "FEATURED EXPERIENCE",
+      subtitle: "Event Anchor & Master of Ceremonies",
+      role: "Event Anchor & Master of Ceremonies",
       image: "/assets/images/events/unicorn26.jpg",
       accentColor: "#7A1736",
       keyHighlights: [
-        "Anchored high-stakes business and entrepreneurship keynote events.",
-        "Managed stage flow, live timing constraints, and audience interaction.",
-        "Delivered formal introductions for esteemed venture speakers, jury panels, and startup founders.",
-        "Maintained seamless energy and audience engagement across lengthy pitch sessions."
+        "Anchored multiple business and entrepreneurship events.",
+        "Managed stage flow and audience interaction.",
+        "Introduced speakers, judges, and participants.",
+        "Maintained audience engagement throughout the event."
       ],
-      tags: ["Keynotes", "Pitch Competitions", "Panel Moderation", "Venture Jury"]
+      tags: ["Event Anchor", "Stage Management", "Audience Engagement"]
     },
     {
       id: "fashion-shows",
-      title: "Fashion Shows & Cultural Nights",
-      category: "Entertainment & Cultural",
+      title: "Fashion Shows & Talent Competitions",
+      category: "Cultural & Entertainment",
       theme: "energetic",
-      badge: "HIGH-ENERGY CROWD",
-      subtitle: "Glamour, Runway Flow & Live Audience Engagement",
-      date: "Annual Cultural Calendar",
-      venue: "Open Stage & Grand Auditorium",
-      attendees: "350+ Live Spectators",
-      role: "Lead Host & Runway Announcer",
+      badge: "EVENT EXPERIENCE",
+      subtitle: "Event Anchor",
+      role: "Event Anchor",
       image: "/assets/images/events/fashionshow.jpg",
       accentColor: "#8F2145",
       keyHighlights: [
-        "Hosted runway fashion shows, celebrity walk-ins, and themed designer showcases.",
-        "Conducted spontaneous on-stage audience interaction and banter.",
-        "Managed rapid backstage sequence changes and delivered upbeat musical transitions.",
-        "Created electrifying crowd cheer battles and spontaneous stage games."
+        "Hosted fashion shows, talent competitions, dance events, and entertainment programs.",
+        "Conducted live audience interaction activities.",
+        "Delivered event announcements and stage transitions."
       ],
-      tags: ["Runway", "Celebrity Guests", "Live Banter", "Music Cues"]
-    },
-    {
-      id: "talent-competitions",
-      title: "Talent Competitions & Dance Events",
-      category: "Entertainment & Cultural",
-      theme: "energetic",
-      badge: "LIVE PERFORMANCE",
-      subtitle: "Inter-Collegiate Dance & Performing Arts Battles",
-      date: "Fest Season",
-      venue: "Hinduja Amphitheatre",
-      attendees: "300+ Cheering Fans",
-      role: "Emcee & Stage Host",
-      image: "/assets/images/events/cultural.jpg",
-      accentColor: "#E8A0B8",
-      keyHighlights: [
-        "Introduced judging panels from the performing arts industry.",
-        "Hyped up crowds between competitive rounds with high-energy crowd call-and-responses.",
-        "Executed real-time crisis handling during audio/technical delays with humor and grace.",
-        "Announced results and anchored award distribution ceremonies."
-      ],
-      tags: ["Performing Arts", "Live Scoring", "Crowd Hype", "Award Show"]
+      tags: ["Runway", "Talent Competitions", "Live Interaction"]
     },
     {
       id: "college-functions",
-      title: "College Functions & Official Ceremonies",
-      category: "Formal Ceremonies",
+      title: "College Functions & Ceremonies",
+      category: "Formal Events",
       theme: "formal",
-      badge: "DIGNIFIED CEREMONIAL",
-      subtitle: "Institutional Dignitary Protocols & Convocation Sessions",
-      date: "Academic Year",
-      venue: "Hinduja College Hall",
-      attendees: "250+ Faculty & Guests",
-      role: "Official Master of Ceremonies",
+      badge: "EVENT EXPERIENCE",
+      subtitle: "Event Anchor",
+      role: "Event Anchor",
       image: "/assets/images/events/ceremony.jpg",
       accentColor: "#7A1736",
       keyHighlights: [
-        "Anchored formal institutional ceremonies adhering to dignitary protocol.",
-        "Managed strict event schedules, lamp-lighting rituals, and presidential addresses.",
-        "Maintained poised, articulate, and respectful bilingual communication.",
-        "Coordinated with department heads and student council leaders."
+        "Anchored formal and semi-formal college events.",
+        "Managed event schedules and stage coordination.",
+        "Ensured professional communication between participants and audiences."
       ],
-      tags: ["Protocol", "Dignitary Welcome", "Bilingual Delivery", "Formal Agenda"]
+      tags: ["Formal Ceremonies", "Stage Coordination", "Communication"]
+    },
+    {
+      id: "cultural-events",
+      title: "Cultural Festivals & Events",
+      category: "Cultural Events",
+      theme: "energetic",
+      badge: "EVENT EXPERIENCE",
+      subtitle: "Event Anchor",
+      role: "Event Anchor",
+      image: "/assets/images/events/cultural.jpg",
+      accentColor: "#E8A0B8",
+      keyHighlights: [
+        "Hosted cultural programs.",
+        "Conducted audience interaction activities.",
+        "Managed announcements and stage transitions.",
+        "Maintained audience engagement."
+      ],
+      tags: ["Cultural Fests", "Stage Transitions", "Audience Engagement"]
     },
     {
       id: "business-pitches",
-      title: "Business Pitch & Startup Competitions",
-      category: "Corporate & Entrepreneurship",
+      title: "Business Pitch Competitions",
+      category: "Entrepreneurship",
       theme: "formal",
-      badge: "INVESTOR SPOTLIGHT",
-      subtitle: "Shark-Tank Style Collegiate Pitching Arenas",
-      date: "E-Cell Calendar",
-      venue: "E-Cell Innovation Hub",
-      attendees: "200+ Delegates & Judges",
-      role: "Stage Moderator & Pitch Host",
+      badge: "ENTREPRENEURSHIP",
+      subtitle: "Event Anchor / Host",
+      role: "Event Anchor / Host",
       image: "/assets/images/events/pitch.jpg",
       accentColor: "#8F2145",
       keyHighlights: [
-        "Kept strict time limits for startup elevator pitches and investor Q&A.",
-        "Moderated rapid-fire questions between industry judges and student founders.",
-        "Ensured fair stage coordination and dynamic transition between rounds.",
-        "Delivered crisp recaps and sponsor acknowledgments."
+        "Hosted business and entrepreneurship-focused events.",
+        "Supported stage flow, participant introductions, and transitions.",
+        "Maintained professional audience engagement throughout the competition."
       ],
-      tags: ["Startup Pitch", "Timekeeping", "Investor Q&A", "Sponsor Segments"]
+      tags: ["Pitch Competitions", "Participant Introductions"]
     },
     {
       id: "speaker-sessions",
-      title: "Guest Speaker Sessions & Panel Moderation",
-      category: "Corporate & Entrepreneurship",
+      title: "Guest Speaker Sessions",
+      category: "Formal Events",
       theme: "formal",
-      badge: "THOUGHT LEADERSHIP",
-      subtitle: "Fireside Chats & Industry Veteran Interactions",
-      date: "Knowledge Series",
-      venue: "Seminar Auditorium",
-      attendees: "250+ Attendees",
-      role: "Panel Moderator & Introduction Host",
+      badge: "GUEST SPEAKER SESSION",
+      subtitle: "Host / Anchor",
+      role: "Host / Anchor",
       image: "/assets/images/events/speaker.jpg",
       accentColor: "#7A1736",
       keyHighlights: [
-        "Researched speaker profiles to deliver authoritative and engaging bio introductions.",
-        "Moderated interactive audience Q&A sessions passing floor mics smoothly.",
-        "Managed stage lighting cues, speaker token felicitations, and formal vote of thanks.",
-        "Extracted crisp takeaways and synthesized discussion points."
+        "Supported formal event flow through speaker introductions.",
+        "Managed professional stage transitions.",
+        "Facilitated audience engagement and respectful interaction."
       ],
-      tags: ["Fireside Chats", "Guest Felicitations", "Audience Q&A", "Vote of Thanks"]
+      tags: ["Speaker Sessions", "Formal Flow", "Stage Transitions"]
     }
   ]
 };

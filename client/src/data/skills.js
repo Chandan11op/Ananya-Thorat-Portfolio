@@ -8,7 +8,7 @@ export const skillsData = {
       description: "Commanding physical and mental presence under intense spotlights.",
       accent: "burgundy",
       skills: [
-        { name: "Event Anchoring & Hosting", level: "Expert", desc: "Commanding stage presence across 300+ crowd auditoriums" },
+        { name: "Event Anchoring & Hosting", level: "Expert", desc: "Commanding stage presence across diverse crowds" },
         { name: "Audience Engagement", level: "High-Energy", desc: "Interactive games, spontaneous banter & crowd call-and-response" },
         { name: "Stage Management", level: "Seamless", desc: "Timing control, speaker cues & backstage crew synchronization" },
         { name: "Crisis Handling on Stage", level: "Instinctive", desc: "Effortlessly covering audio glitches, delays & unexpected schedule shifts" }
@@ -50,6 +50,6 @@ export const skillsData = {
     { text: "CRISIS HANDLING", category: "lead", size: "md", rotate: "-1deg" },
     { text: "CORPORATE HOSTING", category: "formal", size: "lg", rotate: "2deg" },
     { text: "TRILINGUAL MC", category: "voice", size: "md", rotate: "-2deg" },
-    { text: "300+ CROWD CAPTIVATION", category: "energy", size: "xl", rotate: "1deg" }
+    { text: "CROWD CAPTIVATION", category: "energy", size: "xl", rotate: "1deg" }
   ]
 };

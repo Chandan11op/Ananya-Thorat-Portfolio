@@ -38,7 +38,7 @@ export const FormalVsFun = () => {
     badge: "FESTIVAL SPOTLIGHT",
     accentBg: "bg-brandPink-100 text-ink-900",
     borderColor: "border-brandPink-400",
-    quote: "Electrifying 300+ students, igniting runway applause, and keeping the adrenaline surging.",
+    quote: "Electrifying the crowd, igniting runway applause, and keeping the adrenaline surging.",
     events: [
       "Fashion Shows & Designer Runways",
       "Inter-Collegiate Dance Battles",
@@ -242,7 +242,7 @@ export const FormalVsFun = () => {
                       </div>
                     </div>
 
-                    <StampBadge text="300+ HYPE" variant="burgundy" rotate="-4deg" className="hidden sm:inline-flex" />
+                    <StampBadge text="HIGH HYPE" variant="burgundy" rotate="-4deg" className="hidden sm:inline-flex" />
                   </div>
 
                   <p className="font-serif italic text-base sm:text-lg text-burgundy-900 leading-relaxed mb-6">

@@ -5,16 +5,16 @@ import { profileData } from '../data/profile';
 import { mediaAssets } from '../data/media';
 import { useMousePosition } from '../hooks/useMousePosition';
 import { ParallaxLayer } from '../components/common/ParallaxLayer';
-import { 
-  DoodleStar, 
-  DoodleSparkle, 
-  DoodleArrow, 
-  DoodleMic, 
-  DoodleCamera, 
-  DoodleTicket, 
-  DoodleSpeech, 
+import {
+  DoodleStar,
+  DoodleSparkle,
+  DoodleArrow,
+  DoodleMic,
+  DoodleCamera,
+  DoodleTicket,
+  DoodleSpeech,
   DoodleUnderline,
-  DoodleCrown 
+  DoodleCrown
 } from '../components/common/Doodles';
 import { PaperTape } from '../components/common/PaperTape';
 import { HandwrittenNote } from '../components/common/HandwrittenNote';
@@ -45,12 +45,12 @@ export const Hero = () => {
   };
 
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="relative min-h-[92vh] lg:min-h-screen pt-28 pb-16 px-4 sm:px-6 lg:px-8 flex flex-col justify-center overflow-hidden bg-offwhite"
     >
       {/* Background Subtle Editorial Grid & Grain */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none opacity-40"
         style={{ backgroundImage: mediaAssets.textures.paperGrain, backgroundSize: '24px 24px' }}
       />
@@ -103,8 +103,8 @@ export const Hero = () => {
             </motion.div>
 
             {/* Core Professional Summary Statement */}
-            <motion.div 
-              variants={itemVariants} 
+            <motion.div
+              variants={itemVariants}
               className="relative p-5 rounded-2xl bg-white/75 backdrop-blur-sm border border-burgundy-900/10 shadow-paper max-w-lg"
             >
               <div className="absolute -top-3 right-8">
@@ -158,11 +158,11 @@ export const Hero = () => {
 
           {/* RIGHT EDITORIAL COLUMN: Scrapbook Collage Composition with Portrait & Doodles */}
           <div className="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center min-h-[480px] sm:min-h-[560px] lg:min-h-[620px]">
-            
+
             {/* Parallax Layer 1: Background Decorative Elements */}
             <ParallaxLayer mousePosition={mousePosition} speed={8} className="absolute inset-0 pointer-events-none">
               {/* Backing Pink Angular Card */}
-              <div 
+              <div
                 className="absolute top-8 left-6 right-8 bottom-12 rounded-3xl bg-brandPink-100/70 -rotate-3 border border-brandPink-200 shadow-paper"
               />
               {/* Decorative Stamp Background */}
@@ -173,7 +173,7 @@ export const Hero = () => {
 
             {/* Parallax Layer 2: Main Cutout Portrait with Frame */}
             <ParallaxLayer mousePosition={mousePosition} speed={16} className="relative z-10 w-full max-w-sm sm:max-w-md">
-              <div 
+              <div
                 className="relative mx-auto rounded-2xl p-3 bg-white shadow-paper-lift border-2 border-burgundy-900/10 rotate-1 transition-transform duration-500 hover:rotate-0"
                 data-cursor-label="EXPLORE"
               >
@@ -218,7 +218,7 @@ export const Hero = () => {
             {/* Parallax Layer 3: Floating Foreground Stickers & Annotations */}
             <ParallaxLayer mousePosition={mousePosition} speed={28} className="absolute inset-0 pointer-events-none z-20">
               {/* Top Left Speech Bubble */}
-              <motion.div 
+              <motion.div
                 className="absolute -top-2 left-2 sm:left-4 pointer-events-auto"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
@@ -237,14 +237,14 @@ export const Hero = () => {
               </div>
 
               {/* Sticky Note: "The Voice Behind The Moment" */}
-              <motion.div 
+              <motion.div
                 className="absolute bottom-16 -left-4 sm:-left-8 pointer-events-auto max-w-[170px]"
                 animate={{ rotate: [-2, 1, -2] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
               >
                 <HandwrittenNote pin={true} bg="bg-[#FEFCE8]" rotate="-3deg" className="p-3 shadow-md">
                   <p className="text-xs font-bold text-burgundy-900 font-sans uppercase tracking-wider">
-                    E-Cell Leader
+                    E-Cell Head of Anchoring Dept.
                   </p>
                   <p className="text-xs font-handwritten text-ink-800 mt-0.5">
                     "Commanding the stage with confidence & high energy!"

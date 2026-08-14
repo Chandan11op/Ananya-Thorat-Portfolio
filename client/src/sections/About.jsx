@@ -81,7 +81,7 @@ export const About = () => {
                 alt="Ananya Thorat - Event Anchor"
                 className="w-full h-auto relative z-20 filter contrast-[1.02] saturate-[1.05] hover:scale-[1.02] transition-transform duration-500 cursor-pointer"
                 style={{
-                  filter: 'drop-shadow(0px 15px 25px rgba(0,0,0,0.15)) drop-shadow(2px 2px 0px #7A1736) drop-shadow(-2px -2px 0px #7A1736) drop-shadow(2px -2px 0px #7A1736) drop-shadow(-2px 2px 0px #7A1736) drop-shadow(4px 4px 0px #D67B9A) drop-shadow(-4px -2px 0px #D67B9A)'
+                  filter: 'drop-shadow(0px 15px 25px rgba(0,0,0,0.15)) drop-shadow(3px 3px 0px #7A1736)'
                 }}
               />
               

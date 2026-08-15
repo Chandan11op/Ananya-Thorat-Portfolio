@@ -19,11 +19,9 @@ function generateBookingId() {
   return `AT-${dateStr}-${randomChars}`;
 }
 
-// Enable CORS & JSON parsing
 app.use(cors());
 app.use(express.json());
 
-// Health check endpoint for Render
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'Ananya Thorat Booking Backend' });
 });
@@ -32,13 +30,11 @@ app.get('/', (req, res) => {
   res.send('Ananya Thorat Booking Backend API is running.');
 });
 
-// Booking Submission Endpoint
 app.post('/api/submit-booking', async (req, res) => {
   console.log('[BOOKING] Request received on Express backend');
 
   const rawBody = req.body || {};
 
-  // Honeypot check
   if (rawBody.botField || rawBody.website_hp) {
     console.warn('[BOOKING] Bot detected via honeypot');
     return res.status(200).json({ success: true, bookingId: generateBookingId() });
@@ -87,7 +83,7 @@ app.post('/api/submit-booking', async (req, res) => {
   try {
     const appsScriptResponse = await fetch(appsScriptUrl, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify({
         bookingId,
         clientName,
@@ -102,20 +98,33 @@ app.post('/api/submit-booking', async (req, res) => {
       redirect: 'follow'
     });
 
-    if (!appsScriptResponse.ok) {
-      console.error(`[BOOKING] Apps Script returned status ${appsScriptResponse.status}`);
-      return res.status(502).json({
+    const resText = await appsScriptResponse.text();
+    console.log('[BOOKING] Google Apps Script raw response text:', resText);
+
+    let appsScriptResult = {};
+    try {
+      appsScriptResult = JSON.parse(resText);
+    } catch {
+      console.error('[BOOKING] Could not parse Apps Script response as JSON. Raw response:', resText);
+      if (resText.includes('Script function not found: doPost')) {
+        return res.status(500).json({
+          success: false,
+          bookingId,
+          sheetSaved: false,
+          ownerEmailSent: false,
+          visitorEmailSent: false,
+          message: 'Google Apps Script missing doPost function. Please deploy a New Version in Apps Script.'
+        });
+      }
+      return res.status(500).json({
         success: false,
         bookingId,
         sheetSaved: false,
         ownerEmailSent: false,
         visitorEmailSent: false,
-        message: `Google Apps Script returned status ${appsScriptResponse.status}.`
+        message: 'Google Apps Script returned invalid non-JSON response.'
       });
     }
-
-    const appsScriptResult = await appsScriptResponse.json().catch(() => ({}));
-    console.log('[BOOKING] Google Apps Script response:', JSON.stringify(appsScriptResult));
 
     if (appsScriptResult.success && appsScriptResult.sheetSaved) {
       console.log('[BOOKING] Completed successfully');

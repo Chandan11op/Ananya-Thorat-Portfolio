@@ -78,7 +78,8 @@ export const Contact = () => {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/submit-booking', {
+      const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || '';
+      const response = await fetch(`${apiBaseUrl}/api/submit-booking`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

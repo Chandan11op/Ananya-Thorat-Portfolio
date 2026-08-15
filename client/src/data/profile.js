@@ -6,7 +6,7 @@ export const profileData = {
   tagline: "Professional Event Anchor • Host • MC • Public Speaker",
   headlineQuote: "I don't just host events, I create moments people remember.",
   location: "Vasai, Maharashtra",
-  
+
   positioning: [
     "Stage Presence",
     "Audience Engagement",
@@ -44,7 +44,7 @@ export const profileData = {
   ],
 
   contact: {
-    email: "ananyathoratt@gmail.com",
+    email: "ananyathorat26@gmail.com",
     phone: "+91 9359375260",
     location: "Vasai, Maharashtra",
     instagram: "https://www.instagram.com/ananya_khikhikhi/",
